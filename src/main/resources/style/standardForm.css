@@ -9,10 +9,11 @@
     text-align : center;
 }
 
-.standardForm .entry input[type="text"], .standardForm .entry input[type="password"] {
+.standardForm .entry input[type="text"], .standardForm .entry input[type="password"], .standardForm .entry input[type="date"] {
     border-top   : none;
     border-left  : none;
     border-right : none;
+    border-bottom : 4px lightgrey solid;
 }
 
 .standardForm .entry input[type="password"] {
@@ -22,21 +23,18 @@
 
 .standardForm .entry input[type="date"] {
     -webkit-appearance: none;
-    border-top   : none;
-    border-left  : none;
-    border-right : none;
 }
 
 .standardHeader {
     width            : 100%;
     background-color : lightgrey;
-    height           : 3rem;
+    height           : 4rem; /* match title line-height */
 }
 
 .standardHeader .title {
     display     : block;
     width       : fit-content;
     margin      : auto;
-    font-size   : 1rem;
-    line-height : 3rem;
+    font-size   : 2rem;
+    line-height : 4rem; /* match parent height */
 }

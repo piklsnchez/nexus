@@ -1,0 +1,11 @@
+.x {
+    overflow : hidden;
+}
+
+.x span {
+    float :right;
+    font-size : 2rem;
+    padding : 0.25rem 1rem 0.25rem 1rem;
+    border : 4px black solid;
+    border-radius : 50%;
+}

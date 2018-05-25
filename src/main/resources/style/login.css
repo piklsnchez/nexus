@@ -10,6 +10,10 @@
     font-family : sans-serif;
 }
 
+.loginForm .entry input {
+    border : 4px lightgrey solid;
+}
+
 .loginForm .entry .remember {
     float : left;
 }
