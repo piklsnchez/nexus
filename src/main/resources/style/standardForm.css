@@ -1,4 +1,4 @@
-.standardForm {
+.standardForm, .standardView {
     margin : auto;
     width  : 90%;
 }
@@ -9,20 +9,43 @@
     text-align : center;
 }
 
-.standardForm .entry input[type="text"], .standardForm .entry input[type="password"], .standardForm .entry input[type="date"] {
-    border-top   : none;
-    border-left  : none;
-    border-right : none;
+.standardForm .entry input[type="text"], .standardForm .entry input[type="password"], .standardForm .entry input[type="date"], .standardForm .entry select {
+    border-top    : none;
+    border-left   : none;
+    border-right  : none;
     border-bottom : 4px lightgrey solid;
+    color         : lightgrey;
 }
 
 .standardForm .entry input[type="password"] {
     background : url(../image/eyeball.png) right no-repeat;
 }
 
-
 .standardForm .entry input[type="date"] {
     -webkit-appearance: none;
+}
+
+.standardForm .entry input::placeholder {
+    color : lightgrey;
+}
+
+.standardForm .entry select {
+    font-size        : 1rem;
+    color            : black;
+    background-color : transparent;
+    text-align-last  : center;
+    padding-bottom   : 1rem;
+}
+
+.standardForm .entry option {
+    font-size : 1rem;
+}
+
+.standardForm .selectedAmount {
+    font-size : 4rem;
+    display : block;
+    width  : fit-content;
+    margin : auto;
 }
 
 .standardHeader {
@@ -37,4 +60,19 @@
     margin      : auto;
     font-size   : 2rem;
     line-height : 4rem; /* match parent height */
+}
+
+.standardView {
+    padding-bottom : 3rem;
+    border-bottom  : 4px lightgrey solid;
+}
+
+.standardView .entry label {
+    color : grey;
+    float : left;
+}
+
+.standardView .entry .text {
+    font-weight : bold;
+    float       : right;
 }
