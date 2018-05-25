@@ -1,0 +1,34 @@
+.loginForm {
+    margin : auto;
+    width  : 90%;
+}
+
+.loginForm .logo {
+    margin      : 5rem auto 5rem auto;
+    width       : 18rem;
+    font-size   : 3rem;
+    font-family : sans-serif;
+}
+
+.loginForm .entry .remember {
+    float : left;
+}
+
+.loginForm .entry .touch {
+    float : right;
+}
+
+.loginForm .entry.forgot {
+    margin : auto;
+    width : fit-content;
+}
+
+.loginForm .entry.create_account {
+    margin : auto;
+    width : fit-content;
+}
+
+.loginForm .entry.leak {
+    margin : auto;
+    width : fit-content;
+}

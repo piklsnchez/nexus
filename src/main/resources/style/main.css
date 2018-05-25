@@ -1,0 +1,41 @@
+html {
+    font-size : 28px;
+}
+
+body {
+    margin : 0px;
+}
+
+.heading {
+    margin : 1rem auto 1rem auto;
+    width  : fit-content;
+}
+
+.entry {
+    margin   : 1rem auto 1rem auto;
+    display  : block;
+    overflow : hidden;/* so it wont collapse with floated children */
+}
+
+.entry input {
+    width     : 99%;
+    font-size : 2rem;
+}
+
+.entry input[type="checkbox"], .entry input[type="radio"] {
+    width : inherit;
+}
+
+.entry.submit input[type="submit"] {
+    width                 : 100%;
+    height                : 3rem;
+    color                 : white;
+    background-color      : aquamarine;
+    border                : none;
+    -webkit-appearance    : none;
+    -webkit-border-radius : 0;
+}
+
+.phone {
+    text-decoration: underline;
+}
