@@ -1,29 +1,29 @@
-.payBill .accountAddress {
+.payBill .formToggle {
     font-size : 1.5rem;
     width     : fit-content;
     margin    : 2rem auto auto auto;
 }
 
-.payBill .accountAddress label {
+.payBill .formToggle label {
     border  : 0.25rem lightblue solid;
     padding : 0.5rem;
     display : table-cell;
 }
 
-.payBill .accountAddress #account + label {
+.payBill .formToggle .left + label {
     border-top-left-radius    : 16px;
     border-bottom-left-radius : 16px;
 }
 
-.payBill .accountAddress #address + label {
+.payBill .formToggle .right + label {
     border-top-right-radius    : 16px;
     border-bottom-right-radius : 16px;
 }
 
-.payBill .accountAddress input[type="radio"]:checked + label {
+.payBill .formToggle input[type="radio"]:checked + label {
     background-color : lightblue;
 }
 
-.payBill .accountAddress input[type="radio"] {
+.payBill .formToggle input[type="radio"] {
     display : none;
 }

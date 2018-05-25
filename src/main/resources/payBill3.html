@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pay Bill</title>
+        <link rel="stylesheet" href="style/main.css" type="text/css" />
+        <link rel="stylesheet" href="style/standardForm.css" type="text/css" />
+        <link rel="stylesheet" href="style/payBill.css" type="text/css" />
+    </head>
+    <body class="payBill">
+        <div class="standardHeader">
+            <span class="title">Pay&nbsp;Bill</span>
+        </div>
+        <div class="serviceAddress">
+            <span class="address">123&nbsp;Fake&nbsp;St.&nbsp;Las&nbsp;Vegas,&nbsp;NV&nbsp;89179</span>
+            <span class="accountNumber">Account&nbsp;Number:&nbsp;211&#8209;7972978&#8209;002</span>
+        </div>
+        <div class="standardView">
+            <span>$14.32</span>
+            <span>Payment Date: May 21, 2018</span>
+        </div>                
+        <div class="formToggle">
+            <form>
+                <input class="left" id="credit" type="radio" name="card" checked />
+                <label for="credit">Credit&nbsp;Card</label>
+                <input class="right" id="bank" type="radio" name="card">
+                <label for="bank">Bank&nbsp;Account</label>
+            </form>
+        </div>
+        <div class="standardForm">
+            <form>
+                <span class="entry">
+                    <label for="routing">Routing&nbsp;Number</label>
+                    <input id="routing" type="text" name="routing" />
+                </span>
+                <span class="entry">
+                    <label for="bankName">Bank&nbsp;Name</label>
+                    <input id="bankName" type="text" name="bankName" />
+                </span>
+                <span class="entry">
+                    <label for="bankNumber">Bank&nbsp;Account&nbsp;Number</label>
+                    <input id="bankNumber" type="number" name="bankNumber" />
+                </span>
+                <span class="entry">
+                    <label for="bankNumberConfirm">Confirm&nbsp;Bank&nbsp;Account&nbsp;Number</label>
+                    <input id="bankNumberConfirm" type="number" name="bankNumberConfirm" />
+                </span>
+                <span class="exposition">
+                    By submitting this form, you are agreeing to the <a>Terms&nbsp;&&nbsp;Conditions</a>
+                </span>
+                <span class="entry submit">
+                    <input type="submit" value="I Agree, Submit Payment"/>
+                </span>
+            </form>
+        </div>
+    </body>
+</html>

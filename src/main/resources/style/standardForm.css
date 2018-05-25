@@ -9,7 +9,7 @@
     text-align : center;
 }
 
-.standardForm .entry input[type="text"], .standardForm .entry input[type="password"], .standardForm .entry input[type="date"], .standardForm .entry select {
+.standardForm .entry input, .standardForm .entry select {
     border-top    : none;
     border-left   : none;
     border-right  : none;
