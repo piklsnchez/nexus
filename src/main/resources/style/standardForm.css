@@ -84,8 +84,8 @@
 .standardView .amountDue .amount {
     display   : block;
     width     : fit-content;
-    margin    : auto;
-    font-size : 2rem;
+    margin    : 2rem auto 1rem auto;
+    font-size : 3rem;
 }
 
 .standardView .amountDue .dueDate {
