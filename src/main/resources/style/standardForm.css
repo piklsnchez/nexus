@@ -76,3 +76,21 @@
     font-weight : bold;
     float       : right;
 }
+
+.standardView .amountDue {
+    
+}
+
+.standardView .amountDue .amount {
+    display   : block;
+    width     : fit-content;
+    margin    : auto;
+    font-size : 2rem;
+}
+
+.standardView .amountDue .dueDate {
+    display : block;
+    width   : fit-content;
+    margin  : auto;
+    color   : lightgrey;
+}
