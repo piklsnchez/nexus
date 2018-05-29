@@ -1,0 +1,24 @@
+.accordion .tab {
+    padding      : 1rem 1rem 1rem 1rem;
+    border-bottom  : 4px lightgrey solid;
+}
+
+.accordion .tab label {
+}
+
+.accordion .tab input:checked ~ label {
+    color      : aquamarine;
+}
+
+.accordion .tab .tabContent {
+    display : none;
+}
+
+.accordion .tab input {
+    display : none;
+}
+
+.accordion .tab input:checked ~ .tabContent {
+    display : block;
+    margin-top : 1rem;
+}
