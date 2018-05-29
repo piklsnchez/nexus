@@ -1,6 +1,5 @@
 .standardForm, .standardView {
-    margin : auto;
-    width  : 90%;
+    padding : 0rem 2rem;
 }
 
 .standardForm .exposition {
