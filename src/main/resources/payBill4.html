@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pay Bill</title>
+        <link rel="stylesheet" href="style/main.css" type="text/css" />
+        <link rel="stylesheet" href="style/standardForm.css" type="text/css" />
+        <link rel="stylesheet" href="style/payBill.css" type="text/css" />
+    </head>
+    <body class="payBill">
+        <div class="standardHeader">
+            <span class="title">Pay&nbsp;Bill</span>
+        </div>
+        <div class="serviceAddress">
+            <span class="address">123&nbsp;Fake&nbsp;St.&nbsp;Las&nbsp;Vegas,&nbsp;NV&nbsp;89179</span>
+            <span class="accountNumber">Account&nbsp;Number:&nbsp;211&#8209;7972978&#8209;002</span>
+        </div>
+        <div class="standardView">
+            <div class="amountPayed">
+                <div class="message success">
+                    Success!&nbsp;You&nbsp;made&nbsp;a&nbsp;payment&nbsp;of:
+                </div>
+                <div class="amount">$14.32</div>
+            </div>
+        </div>
+        <div class="createAccount">
+            <div class="exposition">
+                <p>Would you like to create a MyAccount?</p>
+                <p>Just create a password to save payment method.</p>
+            </div>
+            <div class="standardForm">
+                <form>
+                    <div class="entry">
+                        <label for="password">Password</label>
+                        <input id="password" type="password" name="password" placeholder="Password" />
+                    </div>
+                    <div class="entry">
+                        <label for="passwordConfirm">Confirm&nbsp;Password</label>
+                        <input id="passwordConfirm" type="password" name="passwordConfirm" placeholder="Password" />
+                    </div>
+                    <div class="entry submit">
+                        <input type="submit" value="No, thanks!" />
+                        <input type="submit" value="Create MyAccount" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

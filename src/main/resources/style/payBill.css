@@ -27,3 +27,38 @@
 .payBill .formToggle input[type="radio"] {
     display : none;
 }
+
+.payBill .createAccount .submit {
+    overflow: hidden; /*for floating*/
+}
+
+.payBill .createAccount .submit input[type="submit"] {
+    display: inline;
+    width: 14rem;
+    height: 3rem;
+    font-size: 1.5rem
+}
+
+.payBill .createAccount .submit input[type="submit"]:nth-child(1) {
+    color            : aquamarine;
+    background-color : transparent;
+    border           : 4px aquamarine solid;
+}
+
+.payBill .amountPayed > div {
+    width  : fit-content;
+    margin : auto;
+}
+
+.payBill .amountPayed .amount {
+    font-size: 3rem;
+}
+
+.payBill .amountPayed .message.success {
+    margin-top          : 2rem;
+    background-image    : url(../image/checkmark.png);
+    background-position : top;
+    background-size     : 4rem;
+    background-repeat   : no-repeat;
+    padding-top         : 6rem;
+}
