@@ -29,7 +29,7 @@
 }
 
 .payBill .createAccount .submit {
-    overflow: hidden; /*for floating*/
+    overflow: hidden; /*for floating children*/
 }
 
 .payBill .createAccount .submit input[type="submit"] {

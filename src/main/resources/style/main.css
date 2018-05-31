@@ -71,3 +71,41 @@ body {
     grid-gap              : 0.5rem;
     grid-auto-rows        : minmax(9rem, auto);
 }
+
+.account .tiles > div {
+    border              : 4px dotted lightgrey;
+    background-position : top 1rem right 50%;
+    background-size     : 4rem;
+    background-repeat   : no-repeat;
+    padding-top         : 5rem;
+}
+
+.account .tiles > div > span {
+    display : block;
+    width   : fit-content;
+    margin  : auto;
+}
+
+.account .tiles .ssm {
+    background-image    : url(../image/meter.png);
+}
+
+.account .tiles .usage {
+    background-image    : url(../image/usage.png);
+}
+
+.account .tiles .billing {
+    background-image    : url(../image/billing.png);
+}
+
+.account .tiles .settings {
+    background-image    : url(../image/settings.png);
+}
+
+.account .tiles .outage {
+    background-image    : url(../image/outage.png);
+}
+
+.account .tiles .notifications {
+    background-image    : url(../image/notifications.png);
+}
