@@ -23,7 +23,7 @@ public class Main {
     }
     
     public static HttpServer startServer() {
-        final ResourceConfig rc = new ResourceConfig().packages("com.swgas.nexus");
+        final ResourceConfig rc = new ResourceConfig().packages("com.swgas.nexus.rest");
         return GrizzlyHttpServerFactory.createHttpServer(URI.create(BASE_URI), rc);
     }
 }

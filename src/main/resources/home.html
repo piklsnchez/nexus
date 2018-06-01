@@ -1,62 +1,71 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>MyAccount</title>        
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="style/main.css" type="text/css" />
-        <link rel="stylesheet" href="style/standardForm.css" type="text/css" />
-    </head>
-    <body class="home">
-        <div class="standardHeader">            
-            <span class="title">Welcome</span>
-        </div>
-        <div class="customer">
-            <div class="customerInfo">
-                <div class="name">
-                    <h1 class="heading">John&nbsp;DeFwan</h1>
-                </div>
-                <div class="serviceAddress">
-                    <span class="address">123&nbsp;Fake&nbsp;St.&nbsp;Las&nbsp;Vegas,&nbsp;NV&nbsp;89179</span>
-                    <span class="accountNumber">Account&nbsp;Number:&nbsp;211&#8209;7972978&#8209;002</span>
-                </div>
-            </div>
-            <div class="payment">                
-                <div class="standardView">
-                    <div class="entry">
-                        <label>Total&nbsp;Payment&nbsp;Due</label>
-                        <span class="text">$14.25</span>
-                    </div>
-                    <div class="entry">
-                        <label>Payment&nbsp;Due&nbsp;Date</label>
-                        <span class="text">May 21, 2018</span>
-                    </div>
-                    <div class="entry submit">
-                        <a class="submit" href="payBill1.html">Pay Now</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="account">
-            <div class="tiles">
-                <div class="ssm">
-                    <span>Start/Stop/Move</span>
-                </div>
-                <div class="usage">
-                    <span>Usage</span>
-                </div>
-                <div class="billing">
-                    <span>Billing</span>
-                </div>
-                <div class="settings">
-                    <span>MyAccount&nbsp;Profile</span>
-                </div>
-                <div class="outage">
-                    <span>Outage</span>
-                </div>
-                <div class="notifications">
-                    <span>Notification&nbsp;Inbox</span>
-                </div>
-            </div>
-        </div>
-    </body>
+<head>
+  <meta charset="UTF-8">
+  <title>MyAccount</title>
+  <link rel="preload" href="script/home.js" as="script" />
+  <link rel="preload" href="image/meter.png" as="image" />
+  <link rel="preload" href="image/usage.png" as="image" />
+  <link rel="preload" href="image/billing.png" as="image" />
+  <link rel="preload" href="image/settings.png" as="image" />
+  <link rel="preload" href="image/outage.png" as="image" />
+  <link rel="preload" href="image/notifications.png" as="image" />
+  
+  <link rel="stylesheet" href="style/main.css" type="text/css" />
+  <link rel="stylesheet" href="style/standardForm.css" type="text/css" />
+  <script type="text/javascript" src="script/home.js" async ></script>
+</head>
+<body class="home">
+	<div class="standardHeader">
+		<span class="title">Welcome</span>
+	</div>
+	<div class="customer">
+		<div class="customerInfo">
+			<div class="name">
+				<h1 class="heading">${customerName}</h1>
+			</div>
+			<div class="serviceAddress">
+				<span class="address">${address}</span>
+				<span class="accountNumber">Account&nbsp;Number:&nbsp;${accountNumber}</span>
+			</div>
+		</div>
+		<div class="payment">
+			<div class="standardView">
+				<div class="entry">
+					<label>Total&nbsp;Payment&nbsp;Due</label>
+					<span class="text">${totalPayment}</span>
+				</div>
+				<div class="entry">
+					<label>Payment&nbsp;Due&nbsp;Date</label>
+					<span class="text">${paymentDueDate}</span>
+				</div>
+				<div class="entry submit">
+					<a class="submit" href="payBill1.html">Pay Now</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="account">
+		<div class="tiles">
+			<div class="ssm">
+				<span>Start/Stop/Move</span>
+			</div>
+			<div class="usage">
+				<span>Usage</span>
+			</div>
+			<div class="billing">
+				<span>Billing</span>
+			</div>
+			<div class="settings">
+				<span>MyAccount&nbsp;Profile</span>
+			</div>
+			<div class="outage">
+				<span>Outage</span>
+			</div>
+			<div class="notifications">
+				<span>Notification&nbsp;Inbox</span>
+			</div>
+		</div>
+	</div>
+</body>
 </html>

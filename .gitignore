@@ -2,3 +2,5 @@
 /.idea/
 hs_err_*.log
 nexus.iml
+.classpath
+.project

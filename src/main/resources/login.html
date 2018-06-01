@@ -1,46 +1,42 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Log in</title>
-        <link rel="stylesheet" href="style/main.css" type="text/css" />
-        <link rel="stylesheet" href="style/login.css" type="text/css" />
-    </head>
-    <body>
-        <div class="loginForm">
-            <div class="logo">
-                Southwest&nbsp;Gas
-            </div>
-            <form action="home.html" method="get">
-                <div class="entry">
-                    <input type="text" name="email" placeholder="Email Address" />
-                </div>
-                <div class="entry">
-                    <input type="text" name="password" placeholder="Password" />
-                </div>
-                <div class="entry">
-                    <span class="remember">
-                        <input id="remember_me" type="checkbox" name="remember_me" />
-                        <label for="remember_me">Remember&nbsp;Me</label>
-                    </span>
-                    <span class="touch">
-                        <input id="touch" type="checkbox" name="touch" />
-                        <label for="touch">Enable&nbsp;Touch&nbsp;Id</label>
-                    </span>
-                </div>
-                <div class="entry submit">
-                    <input type="submit" name="submit" value="Sign In" />
-                </div>
-                <div class="entry forgot">
-                    Forgot&nbsp;<a href="forgotEmail.html">email</a>&nbsp;or&nbsp;<a href="forgotPassword.html">password</a>?
-                </div>
-                <div class="entry create_account">
-                    <a href="createAccount1.html">Don't&nbsp;have&nbsp;an&nbsp;account?</a>
-                </div>
-                <div class="entry leak">
-                    <a href="leak.html">Suspect&nbsp;a&nbsp;leak?</a>
-                </div>
-            </form>
-            <div id="footer">Footer</div>
-        </div>
-    </body>
+<head>
+<title>Log in</title>
+<link rel="stylesheet" href="style/main.css" type="text/css" />
+<link rel="stylesheet" href="style/login.css" type="text/css" />
+</head>
+<body>
+	<div class="loginForm">
+		<div class="logo">Southwest&nbsp;Gas</div>
+		<form action="/nexus/login" method="post">
+			<div class="entry">
+				<input type="text" name="email" placeholder="Email Address" />
+			</div>
+			<div class="entry">
+				<input type="text" name="password" placeholder="Password" />
+			</div>
+			<div class="entry">
+				<span class="remember"> <input id="remember_me"
+					type="checkbox" name="remember_me" /> <label for="remember_me">Remember&nbsp;Me</label>
+				</span> <span class="touch"> <input id="touch" type="checkbox"
+					name="touch" /> <label for="touch">Enable&nbsp;Touch&nbsp;Id</label>
+				</span>
+			</div>
+			<div class="entry submit">
+				<input type="submit" name="submit" value="Sign In" />
+			</div>
+			<div class="entry forgot">
+				Forgot&nbsp;<a href="forgotEmail.html">email</a>&nbsp;or&nbsp;<a
+					href="forgotPassword.html">password</a>?
+			</div>
+			<div class="entry create_account">
+				<a href="createAccount1.html">Don't&nbsp;have&nbsp;an&nbsp;account?</a>
+			</div>
+			<div class="entry leak">
+				<a href="leak.html">Suspect&nbsp;a&nbsp;leak?</a>
+			</div>
+		</form>
+		<div id="footer">Footer</div>
+	</div>
+</body>
 </html>
