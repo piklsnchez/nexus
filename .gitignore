@@ -4,3 +4,4 @@ hs_err_*.log
 nexus.iml
 .classpath
 .project
+/.settings/
