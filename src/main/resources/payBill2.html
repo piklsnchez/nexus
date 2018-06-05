@@ -1,46 +1,52 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Pay Bill</title>
-        <link rel="stylesheet" href="style/main.css" type="text/css" />
-        <link rel="stylesheet" href="style/standardForm.css" type="text/css" />
-        <link rel="stylesheet" href="style/payBill.css" type="text/css" />
-    </head>
-    <body class="payBill">
-        <div class="standardHeader">
-            <span class="title">Pay&nbsp;Bill</span>
-        </div>
-        <div class="serviceAddress">
-            <span class="address">123&nbsp;Fake&nbsp;St.&nbsp;Las&nbsp;Vegas,&nbsp;NV&nbsp;89179</span>
-            <span class="accountNumber">Account&nbsp;Number:&nbsp;211&#8209;7972978&#8209;002</span>
-        </div>
-        <div class="standardView">
-            <div class="entry">
-                <label>Total&nbsp;Payment&nbsp;Due</label>
-                <span class="text">$14.25</span>
-            </div>
-            <div class="entry">
-                <label>Payment&nbsp;Due&nbsp;Date</label>
-                <span class="text">May 21, 2018</span>
-            </div>
-            <div class="entry">
-                <label>Previous&nbsp;Amount&nbsp;Due</label>
-                <span class="text">$1.00</span>
-            </div>
-        </div>
-        <div class="standardForm">
-            <form action="payBill3.html" method="get">
-                <span class="selectedAmount">$14.25</span>
-                <div class="entry">
-                    <select name="payOption">
-                        <option value="total" selected >Total Amount Due</option>
-                        <option value="other">Other Amount Due</option>
-                    </select>
-                </div>
-                <div class="entry submit">
-                    <input type="submit" value="Continue"/>
-                </div>
-            </form>
-        </div>
-    </body>
+<head>
+<title>Pay Bill</title>
+<link rel="stylesheet" href="style/main.css" type="text/css" />
+<link rel="stylesheet" href="style/standardForm.css" type="text/css" />
+<link rel="stylesheet" href="style/payBill.css" type="text/css" />
+<script src="../script/payBill.js"></script>
+</head>
+<body class="payBill">
+	<div class="standardHeader">
+		<span class="title">Pay&nbsp;Bill</span>
+	</div>
+	<div class="serviceAddress">
+		<div class="address customer address">${address}</div>
+		<div class="accountNumber">
+			<label>Account&nbsp;Number:&nbsp;</label> <span
+				class="customer accountNumber">${accountNumber}</span>
+		</div>
+	</div>
+	<div class="payment">
+			<div class="standardView">
+				<div class="entry">
+					<label>Total&nbsp;Payment&nbsp;Due</label>
+					<span class="text customer currentAmountDue">${currentAmountDue}</span>
+				</div>
+				<div class="entry">
+					<label>Payment&nbsp;Due&nbsp;Date</label>
+					<span class="text customer paymentDueDate">${paymentDueDate}</span>
+				</div>
+				<div class="entry">
+					<label>Previous&nbsp;Amount&nbsp;Due</label>
+					<span class="text customer previousAmountDue">${previousAmountDue}</span>
+				</div>
+			</div>
+		</div>
+	<div class="standardForm">
+		<form action="payBill3.html" method="get">
+			<span class="selectedAmount">$14.25</span>
+			<div class="entry">
+				<select name="payOption">
+					<option value="total" selected>Total Amount Due</option>
+					<option value="other">Other Amount Due</option>
+				</select>
+			</div>
+			<div class="entry submit">
+				<input type="submit" value="Continue" />
+			</div>
+		</form>
+	</div>
+</body>
 </html>

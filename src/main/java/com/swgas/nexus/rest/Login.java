@@ -35,8 +35,7 @@ public class Login {
 	public Response login(@FormParam("email") String email, @FormParam("password") String password) {
 		LOG.info(String.format("email: %s; password: %s", email, password));
 		// lookup user and set cookie with webCustomerId
-		return Response.seeOther(URI.create("../home.html")).cookie(new NewCookie("webCustomerUid", "1601", "/", null,
-				2, "", 1000, Date.from(Instant.now().plus(1, ChronoUnit.DAYS)), false, false)).build();
+		return Response.seeOther(URI.create("../home.html")).cookie(new NewCookie("webCustomerUid", "1601", "/", null, 2, "", 1000, Date.from(Instant.now().plus(1, ChronoUnit.DAYS)), false, false)).build();
 	}
 
 	@Path("{id}")
@@ -47,7 +46,7 @@ public class Login {
 				.add("customerName"      , "John DeFwan")
 				.add("address"           , "7301 Super Fake St. Las Nevgas, NV.")
 				.add("accountNumber"     , "211-7972978-002")
-				.add("totalPaymentAmount", 14.78)
+				.add("currentAmountDue", 14.78)
 				.add("paymentDueDate"    , LocalDate.now().plusDays(5).format(DateTimeFormatter.ofPattern("MMMM, dd yyyy")))
 				.build().toString()).build();
 	}

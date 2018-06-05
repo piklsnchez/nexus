@@ -49,11 +49,11 @@ body {
     text-decoration: underline;
 }
 
-.serviceAddress .address, .serviceAddress .accountNumber {
+.serviceAddress > .address, .serviceAddress > .accountNumber {
     display     : block;
     overflow    : hidden;
     margin      : auto;
-    width       : fit-content;
+    width       : fit-content;    
     font-size   : 1.5rem;
 }
 

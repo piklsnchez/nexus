@@ -25,23 +25,25 @@
 				<h1 class="heading customer customerName">${customerName}</h1>
 			</div>
 			<div class="serviceAddress">
-				<span class="address customer address">${address}</span>
-				<label>Account&nbsp;Number:&nbsp;</label>
-				<span class="customer accountNumber">${accountNumber}</span>
+				<div class="address customer address">${address}</div>
+				<div class="accountNumber">
+					<label>Account&nbsp;Number:&nbsp;</label> <span
+						class="customer accountNumber">${accountNumber}</span>
+				</div>
 			</div>
 		</div>
 		<div class="payment">
 			<div class="standardView">
 				<div class="entry">
 					<label>Total&nbsp;Payment&nbsp;Due</label>
-					<span class="text customer totalPaymentAmount">${totalPaymentAmount}</span>
+					<span class="text customer currentAmountDue">${currentAmountDue}</span>
 				</div>
 				<div class="entry">
 					<label>Payment&nbsp;Due&nbsp;Date</label>
 					<span class="text customer paymentDueDate">${paymentDueDate}</span>
 				</div>
 				<div class="entry submit">
-					<a class="submit" href="payBill1.html">Pay Now</a>
+					<a class="submit" href="payBill2.html">Pay Now</a>
 				</div>
 			</div>
 		</div>
